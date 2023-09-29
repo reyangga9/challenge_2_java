@@ -1,0 +1,13 @@
+================ 
+Binar FUD  
+================ 
+Terima kasih sudah memesan di BinarFud 
+Dibawah ini adalah pesanan anda
+ 
+
+Nasi Goreng 90,000 6
+Bihun Goreng 48,000 4
+Mie Goreng 130,000 10
+================ 
+Simpan struk sebagai bukti pembayaran 
+================ 

@@ -1,10 +1,10 @@
-
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class Restaurant {
+public class RestaurantApp {
 
     public static void main(String[] args) {
-
+        DecimalFormat decimalFormat = new DecimalFormat("#,###");
         Menu menu = new Menu();
 
         menu.printMenu();
@@ -19,6 +19,8 @@ public class Restaurant {
             choice = input.nextInt();
 
             switch (choice) {
+                case 0:
+                    break;
                 case 1:
 
                     hasil += menu.printMenu(0);
@@ -51,7 +53,7 @@ public class Restaurant {
                     menu.printOrder();
 
                     System.out.println("-------------------+");
-                    System.out.println("Total : " + hasil);
+                    System.out.println("Total : " + decimalFormat.format(hasil));
 
                     System.out.println("1. Konfirmasi dan Bayar");
                     System.out.println("2. Kembali ke menu utama");
@@ -61,7 +63,7 @@ public class Restaurant {
                     switch (confirm) {
 
                         case 1:
-                            System.out.println("Cumanprint");
+                            menu.saveOrderToFile("receipt.txt");
                             System.exit(0);
 
                         case 2:
