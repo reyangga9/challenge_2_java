@@ -73,14 +73,15 @@ public class RestaurantApp {
                             System.exit(0);
                             break;
                         default:
-                            System.out.println("Pilihan salah -> Kembali ke menu awal ");
+                            System.out.println(
+                                    "Pilihan tidak valid. Silakan pilih nomor menu yang benar. Kembali ke menu awal.");
                             break;
                     }
 
                     break;
 
                 default:
-                    System.out.println("Pilihan Salah ");
+                    System.out.println("Pilihan tidak valid. Silakan pilih nomor menu yang benar.");
 
                     break;
 
